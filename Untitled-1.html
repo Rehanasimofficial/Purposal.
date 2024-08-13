@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me?</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #fef6f6;
+            color: #333;
+        }
+
+        header {
+            background: #ffb3e6;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5em;
+        }
+
+        .proposal {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .response button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #ff66b2;
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        .response button:hover {
+            background-color: #ff3399;
+        }
+
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Will You Marry Me?</h1>
+        <p>Your answer means everything to me</p>
+    </header>
+    <section class="proposal">
+        <h2>The Proposal</h2>
+        <p>From the moment our paths crossed, my heart has been yours. Every laugh, every moment we've shared has made me realize just how perfect you are for me. I dream of a lifetime with you, full of love, joy, and endless adventures.</p>
+        <p>Will you make me the happiest person in the world and say yes? Together, we can create a beautiful story that lasts forever.</p>
+        <div class="response">
+            <button id="accept">Yes</button>
+            <button id="decline">No</button>
+        </div>
+        <div id="result" class="result"></div>
+    </section>
+    <footer>
+        <p>Forever yours, Rehan</p>
+    </footer>
+    <script>
+        document.getElementById('accept').onclick = function() {
+            document.getElementById('result').innerHTML = "You’ve made me the happiest person in the world! I can't wait to spend forever with you.";
+            document.getElementById('result').style.display = 'block';
+        };
+
+        document.getElementById('decline').onclick = function() {
+            document.getElementById('result').innerHTML = "I respect your decision. No matter what, you’ll always have a special place in my heart.";
+            document.getElementById('result').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
